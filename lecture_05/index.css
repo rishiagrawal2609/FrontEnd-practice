@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+}
+
+body{
+    background-color: grey;
+    margin: 0px;
+}
+
+#root{
+    padding: 5px;
+    margin: 10px;
+   background-color: aqua; 
+}
+
+#click{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 16px;
+}
+ 
+.Item{
+    color: brown;
+}
+
+.another{
+    color: yellow;
+}

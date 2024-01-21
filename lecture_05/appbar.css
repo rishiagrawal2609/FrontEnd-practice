@@ -1,0 +1,27 @@
+#body{
+    margin: 0px;
+}
+#root{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+
+}
+
+#menue{
+    padding: 8px;
+    margin-right: 16px;
+}
+
+#title{
+    flex-grow: 1;
+}
+
+#login{
+    margin-right: 16px;
+    padding: 10px;
+    border: none;
+    background: none;
+
+}

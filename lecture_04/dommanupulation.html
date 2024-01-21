@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Manipulation</title>
+</head>
+<body>
+    <div id = "root"></div>
+    <h1 id="date"></h1>
+    <script>
+        
+        let dateElement = document.getElementById("date");
+        function modifyDate(){
+            dateElement.innerHTML = new Date(); 
+        }
+        setInterval(modifyDate,1000);
+
+        //part 2
+        let root = document.getElementById("root");
+        function modifyDate2(){
+            let time = document.createElement("h1");
+            time.innerHTML = new Date();
+            root.appendChild(time)
+            setTimeout(deleteItem,3000,time);
+        }
+
+        function deleteItem(element){
+            root.removeChild(element);
+        }
+
+        setInterval(modifyDate2,1000);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"></script>
+    </head>
+    <body>
+        <h1>This is my first project</h1>
+        <input id="username"></input>
+        <button onclick="fetchUser()">Fetch</button>
+        <img id ="profile" 
+        src ="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png">
+    
+        <script>
+            async function fetchUser(){
+                let username = document.getElementById("username").value;
+                console.log(username);
+                let url = "https://api.github.com/users/" + username;
+                let response = await axios.get(url);
+                console.log(response.status);
+                if (response.status == 200){
+                let usr_img = response.data.avatar_url;
+                let image = document.getElementById("profile");
+                image.setAttribute("src", usr_img);
+                } else if (response.status == 404){
+                    console.log("Wrong username "+ username);
+                } else {
+                    console.log("something went wrong");
+                }
+            }
+        </script>
+    </body>
+</html>
