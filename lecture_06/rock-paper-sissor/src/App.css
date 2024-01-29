@@ -1,0 +1,82 @@
+.app{
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: x-large;
+
+}
+
+.huem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.cuem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.choice{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.human{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  flex-grow: 1;  
+}
+
+.computer{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  flex-grow: 1;  
+}
+
+.userInput{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rock{
+  margin: 20px;
+}
+
+#paper{
+  margin: 20px;
+}
+
+#sissor{
+  margin: 20px;
+}
